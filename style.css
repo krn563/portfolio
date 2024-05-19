@@ -1,8 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 *{
     margin: 0;
     padding: 0;
@@ -42,6 +40,7 @@ section{
 }
 .about .about-content,
 .services .serv-content,
+.skills .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -260,13 +259,28 @@ section .title::after{
 .skills .title::after{
     content: "What I Know";
 }
-/* .skills .skills-content .column{
+.skills .skills-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 4px 10px;
+    margin-top: 20px;
+    border-radius: 9px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
     color: crimson;
@@ -303,7 +317,7 @@ section .title::after{
 .skills-content .right .c::before{
     width: 60%;
 }
- */
+
 
 /* contact section styling */
 .contact .title::after{
